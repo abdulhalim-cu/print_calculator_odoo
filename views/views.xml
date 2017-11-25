@@ -1,0 +1,45 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="media_form_view">
+      <field name="name">media.form</field>
+      <field name="model">calculator.media</field>
+      <field name="arch" type="xml">
+        <form string="Media Form">
+          <sheet>
+            <group>
+              <field name="name"/>
+              <field name="cost"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="media_tree_view">
+      <field name="name">media.form</field>
+      <field name="model">calculator.media</field>
+      <field name="arch" type="xml">
+        <tree string="Media Tree">
+          <field name="name"/>
+          <field name="cost"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="media_list_action">
+      <field name="name">Calculator</field>
+      <field name="res_model">calculator.media</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="xml">
+        <p class="oe_view_nocontent_create">Create the first media type and cost per square feet</p>
+      </field>
+    </record>
+
+    <!--Menu item media-->
+    <menuitem id="main_calculator_menu" name="Calculator"/>
+    <menuitem id="media_menu" name="Media" action="media_list_action" parent="main_calculator_menu"/>
+
+  </data>
+</odoo>

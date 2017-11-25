@@ -1,0 +1,17 @@
+<odoo>
+  <data>
+    <template id="index">
+      <t t-call="website.layout">
+        <t t-set="title">Calculator</t>
+        <div class="oe_structure">
+          <div class="container">
+            <form string="Calculate">
+              <label for="field1">Number field 1</label>
+              <input type="number" name="name" id="field1"/>
+            </form>
+          </div>
+        </div>
+      </t>
+    </template>
+  </data>
+</odoo>

@@ -1,0 +1,10 @@
+<odoo>
+  <data>
+    <!--<template id="index">-->
+      <!--<title>Calculator</title>-->
+      <!--<t t-foeach="sample_data" t-as="data">-->
+        <!--<t t-esc="data"/>-->
+      <!--</t>-->
+    <!--</template>-->
+  </data>
+</odoo>
